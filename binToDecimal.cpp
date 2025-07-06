@@ -5,9 +5,9 @@ using namespace std;
 	int ans = 0;
 	int  pow = 1;
 	 while(binNum > 0) {
-	 int rem = binNum % 10;
-	 ans = ans + rem * pow ;
-	binNum = binNum / 10 ;
+	 int rem = binNum % 10; //seprate last digit as remainder
+	 ans = ans + rem * pow ; //
+	binNum = binNum / 10 ; //remove  last digit  as quotient
 	 pow = pow * 2 ;
 		}
 	return ans;
