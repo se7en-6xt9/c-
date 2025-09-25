@@ -1,0 +1,37 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+	bool isValid(vector<int> &arr, int n ,int m, int maxAllowedpage){
+	int student = 1, page = 0;
+	for(int i=0; i<n; i++){
+	if(arr[i]>maxAllowedpage){
+	return false;
+	}
+	if(pages+arr[i]<=maxAllowedpages){
+	pages=arr[i];
+	}
+	 }
+	return student>m ? false : true:
+	}
+	int allocateBooks(vector<int>& arr,int n){
+	if(m>n){
+	return -1;
+	}
+	int sum=0;
+	for(int i=0; i<n; i++){
+	sum+=arr[i];
+	}
+	int ans -1;
+	int st=0; end=sum;
+	while(st<=end){
+	int mid = st+(end-st)/2;
+	if(isvalid(arr, n,m,mid){
+	ans=mid;
+	end=mid-1;
+	} else {
+	st=mid+1;	
+	}
+	 }
+	return ans;
+	}
