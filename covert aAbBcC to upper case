@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+        void lowToUp(char word[10], int n){
+        cin>>word;
+        for(int i=0; i<n; i++){
+         for(int j=97; j<123; j++){
+          int temp = int(word[i]);
+          if(temp==j){
+           int temp2=j-97+65;
+           word[i]=char(temp2);
+                }
+                 }
+                  }
+        //cout<<"lenght-->> "<<word.size()<<endl;
+        cout<<"your aarr -->>"<<word<<endl;
+                     }
+        int main(){
+        char word[10];
+        int n=strlen(word);
+        lowToUp(word,n);
+        return 0;
+        }
